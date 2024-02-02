@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #1f1f1f;
+    color:#cabaaa;
+}
+
+/* Header */
+
+#header {
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 110vh;
+    background-image: url(/Portfolio/image.jpg);
+}
+
+.container {
+    padding: 10px 10%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    position: relative;
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 700;
+    color: snow;
+}
+
+.social {
+    font-size: 35px;
+}
+
+.social::after {
+    content: none;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #102077;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+    
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+}
+
+.intro div {
+    width: 50%;
+    margin-top: 15%;
+    margin-left: 50%;
+    margin-right: 5%;
+    align-self: center;
+    color:#e4e4e4;
+    font-family: Verdana, sans-serif;
+}
+
+.intro div h1 {
+    font-size: 48px;
+}
+
+.intro div p {
+    font-size: 20px;
+}
+
+@keyframes smooth-appear {
+  to{
+    bottom: 20px;
+    opacity:1;
+  }
+}
+
+.intro div {
+    animation: smooth-appear 1s ease forwards;
+}
+
+
+/* ------ About Page ------ */
+
+#About {
+  height:110vh;
+  text-align:center;
+  padding-top:400px;
+}
+
+h3 {
+  font-size:50px;
+  color:#cabaaa;
+}
+
+h4 {
+  font-size:25px;
+  color:#cabaaa;
+}
+
+/* ------ Skills Page ------*/
+
+.subtitle {
+    text-align: center;
+    font-size: 50px;
+    padding-bottom: 50px;
+}
+
+#Skills {
+    padding: 30px 0;
+}
+
+.skillsList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.skillsList div {
+    background: rgb(56, 56, 56);
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-right: 10px;
+    height: 100%;
+    min-height: 350px;
+}
+
+.skillsList div i {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.skillsList div h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.skillsList div a {
+    text-decoration: none;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.skillsList div ul {
+    list-style-type: none;
+}
+
+.skillsList div ul li {
+    font-size: 16px;
+}
+
+.skillsList div p {
+    font-size: 16px;
+}
+
+.skillsList div:hover {
+    background: rgb(160, 61, 61);
+    transform: translateY(-10px);
+}
+
+/* ------ Contact Form ------ */
+
+#Contact {
+    height: auto;
+    width: 100%;
+    margin-top: 200px;
+}
+
+.contact-info h1 {
+    font-size: 50px;
+    align-items: center;
+    text-align: center;
+}
+
+.contact-info p {
+    text-align: center;
+}
+
+.contact-form form {
+    width: 80%;
+    align-items: center;
+    display: block;
+    margin-left: 30%;
+    margin-top: 50px;
+}
+
+form input, form textarea {
+    align-self: center;
+    width: 50%;
+    border: 0;
+    outline: none;
+    padding: 15px;
+    margin: 15px 0;
+    color: #1f1f1f;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+.btn {
+    display: block;
+    border: none;
+    background: rgb(211, 79, 79);
+    color: snow;
+    font-size: 16px;
+    padding: 15px 30px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn:hover {
+    background: rgb(241, 90, 90);
+    transform: translateY(-2px);
+}
+
+/* ------ Footer ------*/
+
+#footer-container {
+    display: flex;
+    margin-left: 0%;
+    margin-top: 10%;
+    background: #313131;
+}
+
+#footer-container div {
+    width: 50%;
+}
+
+
